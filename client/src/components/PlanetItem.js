@@ -1,12 +1,15 @@
+import './PlanetItem.css';
+
 const PlanetItem = ({planet}) => {
     return (
         <div>
+          <div className="solar-system planet-flex">
             <ul>
-                <li>
-                    <h5>{ planet.name }</h5>
-                    <img src="https://cdn2.iconfinder.com/data/icons/education-solid-icons-volume-2/64/057-512.png" alt="planet :)" />
-                </li>
+              <li>
+                <img className='scalable' id={ planet.name } src={ planet.image } alt={ planet.name } />
+              </li>
             </ul>
+          </div>
         </div>
     );
 }
