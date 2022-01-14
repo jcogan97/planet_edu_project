@@ -10,7 +10,12 @@ li {
     list-style: none;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 .scalable {
     width: 200px;
     height: auto;
 }
+
