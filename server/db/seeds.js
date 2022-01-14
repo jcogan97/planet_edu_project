@@ -1,7 +1,7 @@
 use bbc_edu;
 db.dropDatabase();
 
-db.planets.insertMany([
+db.planets.insertMany(
     [
         {
             name: "Mercury",
@@ -92,4 +92,4 @@ db.planets.insertMany([
             equatorial_circumference_km: 155600
         }
     ]
-]);
+);

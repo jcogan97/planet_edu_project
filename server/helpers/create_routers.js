@@ -10,12 +10,12 @@ const createRouter = function (collection) {
   router.get('/', (req, res) => {
     collection.find()
     .toArray()
-    .then((body) => res.json(body))
+    .then((docs) => res.json(docs))
     .catch((err) => {
       console.error(err);
       res.status({ status: 500, error: err})
-    })
-  })
+    });
+  });
 
   //SHOW - GET ONE BY ID
 
