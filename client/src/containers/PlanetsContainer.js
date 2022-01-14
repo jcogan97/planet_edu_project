@@ -4,7 +4,7 @@ import PlanetDetails from '../components/PlanetDetails';
 
 const PlanetsContainer = () => {
     const [planets, setPlanets] = useState([]);
-    const [selectedPlanet, setSelectedPlanet] = useState(null);
+    const [selectedPlanets, setSelectedPlanets] = useState([]);
 
     useEffect(() => {
         getPlanets();
@@ -17,13 +17,20 @@ const PlanetsContainer = () => {
     };
 
     const onPlanetClick = (planet) => {
-        setSelectedPlanet(planet);
+        const names = selectedPlanets.filter(selected => selected.name === planet.name);
+        if (names == false) {
+            setSelectedPlanets([...selectedPlanets, planet]);
+            console.log(planet);
+            console.log(selectedPlanets);
+        };
+        
+        
     };
 
     return (
         <>
             <PlanetsList planets={planets} onPlanetClick={onPlanetClick} />
-            {selectedPlanet ? <PlanetDetails planet={selectedPlanet} /> : null}
+            {selectedPlanets ? <PlanetDetails planets={selectedPlanets} /> : null}
         </>
     );
 };
