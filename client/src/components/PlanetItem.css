@@ -1,0 +1,16 @@
+.planet-flex {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: none;
+}
+
+li {
+    list-style: none;
+}
+
+.scalable {
+    width: 200px;
+    height: auto;
+}
