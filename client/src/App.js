@@ -1,8 +1,9 @@
 import './App.css';
+import PlanetsContainer from './containers/PlanetsContainer';
 
 function App() {
   return (
-<h1>Planet Education</h1>
+    <PlanetsContainer/>
   );
 }
 
