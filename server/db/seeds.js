@@ -1,10 +1,11 @@
 use bbc_edu;
 db.dropDatabase();
 
-db.planets.insertMany([
+db.planets.insertMany(
     [
         {
             name: "Mercury",
+            image: "https://cdn.pngsumo.com/mercury-transparent-png-stickpng-mercury-planet-png-400_400.png",
             number_of_moons: 0,
             notable_moons: [],
             position_from_sun: 1,
@@ -12,10 +13,11 @@ db.planets.insertMany([
             first_record: "14th Century BC",
             recorded_by: "Assyrian astronomers",
             average_surface_temperature_c: 127,
-            equatorial_circumference_km: 15329 
+            equatorial_circumference_km: 15329
         },
         {
             name: "Venus",
+            image: "https://www.transparentpng.com/thumb/venus/venus-space-png-1.png",
             number_of_moons: 0,
             notable_moons: [],
             position_from_sun: 2,
@@ -27,6 +29,7 @@ db.planets.insertMany([
         },
         {
             name: "Earth",
+            image: "https://www.transparentpng.com/thumb/earth/QzJqcJ-earth-clipart-png-earth-clipart-png-image-free-download.png",
             number_of_moons: 1,
             notable_moons: ["The moon"],
             position_from_sun: 3,
@@ -38,6 +41,7 @@ db.planets.insertMany([
         },
         {
             name: "Mars",
+            image: "https://snipstock.com/assets/cdn/png/new/84c683a3d443ac280b881d4d4a88fa2e.png",
             number_of_moons: 2,
             notable_moons: ["Phobos", "Deimos"],
             position_from_sun: 4,
@@ -49,6 +53,7 @@ db.planets.insertMany([
         },
         {
             name: "Jupiter",
+            image: "https://vignette.wikia.nocookie.net/thesolarsystem6361/images/d/d3/Jupiter_spacepedia.png/revision/latest/scale-to-width-down/480?cb=20180301165031",
             number_of_moons: 67,
             notable_moons: ["Io", "Europa", "Ganymede", "Callisto"],
             position_from_sun: 5,
@@ -60,6 +65,7 @@ db.planets.insertMany([
         },
         {
             name: "Saturn",
+            image: "https://assets.stickpng.com/thumbs/580b585b2edbce24c47b270c.png",
             number_of_moons: 62,
             notable_moons: ["Titan", "Rhea", "Enceladus"],
             position_from_sun: 6,
@@ -71,6 +77,7 @@ db.planets.insertMany([
         },
         {
             name: "Uranus",
+            image: "https://images.vectorhq.com/images/previews/1ff/uranus-psd-437280.png",
             number_of_moons: 27,
             notable_moons: ["Oberon", "Titania", "Miranda", "Ariel", "Umbriel"],
             position_from_sun: 7,
@@ -82,6 +89,7 @@ db.planets.insertMany([
         },
         {
             name: "Neptune",
+            image: "https://vignette.wikia.nocookie.net/thesolarsystem6361/images/c/c1/Neptune_spacepedia.png/revision/latest/scale-to-width-down/480?cb=20180302125739",
             number_of_moons: 14,
             notable_moons: ["Triton"],
             position_from_sun: 8,
@@ -92,4 +100,4 @@ db.planets.insertMany([
             equatorial_circumference_km: 155600
         }
     ]
-]);
+);
