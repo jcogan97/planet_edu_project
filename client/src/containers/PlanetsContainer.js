@@ -23,7 +23,7 @@ const PlanetsContainer = () => {
     return (
         <>
             <PlanetsList planets={planets} onPlanetClick={onPlanetClick} />
-            {selectedPlanet ? <PlanetDetail planet={selectedPlanet} /> : null}
+            {selectedPlanet ? <PlanetDetails planet={selectedPlanet} /> : null}
         </>
     );
 };
