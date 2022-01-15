@@ -1,6 +1,6 @@
 .planet-flex {
     text-align: center;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
     margin: none;
@@ -15,7 +15,11 @@ li:hover {
 }
 
 .scalable {
-    width: 200px;
+    width: 75px;
     height: auto;
+}
+
+.drop-shadow {
+    filter: drop-shadow(0 0 2mm #000) 
 }
 

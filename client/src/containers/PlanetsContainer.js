@@ -29,8 +29,10 @@ const PlanetsContainer = () => {
 
     return (
         <>
+        <div className='main-container'>
             <PlanetsList planets={planets} onPlanetClick={onPlanetClick} />
             {selectedPlanets ? <PlanetDetails planets={selectedPlanets} /> : null}
+        </div>
         </>
     );
 };
