@@ -8,10 +8,10 @@ const PlanetList = ({planets, onPlanetClick, selectedPlanets}) => {
     // });
 
     return(
-        <div className="pizza-planet flex-planet">
+        <div className="pizza-planet">
             {
                 planets.map((planet, index) => (
-                    <div className={`main-container-${index}`} key={`Container${index}`}>
+                    <div className={`list-container-${index}`} key={`Container${index}`}>
                         {
                             index % 2 === 0
                             ?

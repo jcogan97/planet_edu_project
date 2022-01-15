@@ -8,13 +8,7 @@ const PlanetItem = ({planet, onPlanetClick}) => {
 
 
     return (
-      <div className="planet-flex">
-        <ul>
-          <li onClick={handleClick}>
-            <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
-          </li>
-        </ul>
-      </div>
+      <img onClick={handleClick} className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
     );
 }
  

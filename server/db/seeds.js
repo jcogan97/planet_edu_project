@@ -31,7 +31,7 @@ db.planets.insertMany(
             name: "Earth",
             image: "https://www.transparentpng.com/thumb/earth/QzJqcJ-earth-clipart-png-earth-clipart-png-image-free-download.png",
             number_of_moons: 1,
-            notable_moons: ["The moon"],
+            notable_moons: ["The Moon"],
             position_from_sun: 3,
             known_rings: 0,
             first_record: "",
