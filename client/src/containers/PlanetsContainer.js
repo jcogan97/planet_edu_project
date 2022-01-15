@@ -21,8 +21,11 @@ const PlanetsContainer = () => {
       setSelectedPlanets([...selectedPlanets, planetName]);
       console.log(planetName);
       console.log(selectedPlanets);
-    };
+    }
 
+    else (
+      setSelectedPlanets(selectedPlanets.filter((planet) => planet !== planetName))
+    )
 
   };
 
