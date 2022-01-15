@@ -11,8 +11,19 @@ const PlanetList = ({planets, onPlanetClick, selectedPlanets}) => {
             {
                 planets.map((planet, index) => (
                     <div className="main-container" key={`Container${index}`}>
-                        <PlanetItem planet={planet} key={planet._id} onPlanetClick={onPlanetClick} />
-                        {planet && <PlanetDetails planet={planet} key={`${index} Card`} />}
+                        {
+                            index % 2 === 0
+                            ?
+                            <>
+                                <PlanetItem planet={planet} key={planet._id} onPlanetClick={onPlanetClick} />
+                                {selectedPlanets.includes(planet.name) && <PlanetDetails planet={planet} key={`${index} Card`} />}
+                            </>
+                            :
+                            <>
+                                {selectedPlanets.includes(planet.name) && <PlanetDetails planet={planet} key={`${index} Card`} />}
+                                <PlanetItem planet={planet} key={planet._id} onPlanetClick={onPlanetClick} />
+                            </>
+                        }
                     </div>   
                 ))
             }
