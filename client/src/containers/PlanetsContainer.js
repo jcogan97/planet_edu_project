@@ -3,38 +3,38 @@ import PlanetsList from "../components/PlanetsList";
 import PlanetDetails from '../components/PlanetDetails';
 
 const PlanetsContainer = () => {
-    const [planets, setPlanets] = useState([]);
-    const [selectedPlanets, setSelectedPlanets] = useState([]);
+  const [planets, setPlanets] = useState([]);
+  const [selectedPlanets, setSelectedPlanets] = useState([]);
 
-    useEffect(() => {
-        getPlanets();
-    });
+  useEffect(() => {
+    getPlanets();
+  });
 
-    const getPlanets = () => {
-        fetch("http://127.0.0.1:5000/api/planets")
-        .then(results => results.json())
-        .then(data => setPlanets(data));
+  const getPlanets = () => {
+    fetch("http://127.0.0.1:5000/api/planets")
+      .then(results => results.json())
+      .then(data => setPlanets(data));
+  };
+
+  const onPlanetClick = (planet) => {
+    const names = selectedPlanets.filter(selected => selected.name === planet.name);
+    if (names == false) {
+      setSelectedPlanets([...selectedPlanets, planet]);
+      console.log(planet);
+      console.log(selectedPlanets);
     };
 
-    const onPlanetClick = (planet) => {
-        const names = selectedPlanets.filter(selected => selected.name === planet.name);
-        if (names == false) {
-            setSelectedPlanets([...selectedPlanets, planet]);
-            console.log(planet);
-            console.log(selectedPlanets);
-        };
-        
-        
-    };
 
-    return (
-        <>
-        <div className='main-container'>
-            <PlanetsList planets={planets} onPlanetClick={onPlanetClick} />
-            {selectedPlanets ? <PlanetDetails planets={selectedPlanets} /> : null}
-        </div>
-        </>
-    );
+  };
+
+  return (
+    <>
+      <div className='main-container'>
+        <PlanetsList planets={planets} onPlanetClick={onPlanetClick} />
+        {selectedPlanets && <PlanetDetails planets={selectedPlanets} />}
+      </div>
+    </>
+  );
 };
 
 

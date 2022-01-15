@@ -1,5 +1,5 @@
 .planet-flex {
-    text-align: center;
+    align-items: center;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -16,6 +16,11 @@ li:hover {
 
 .scalable {
     width: 75px;
+    height: auto;
+}
+
+#Saturn {
+    width: 140px;
     height: auto;
 }
 

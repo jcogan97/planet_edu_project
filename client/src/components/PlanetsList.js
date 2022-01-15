@@ -1,4 +1,5 @@
 import PlanetItem from "./PlanetItem";
+import PlanetDetails from "./PlanetDetails";
 
 const PlanetList = ({planets, onPlanetClick}) => {
     const planetsList = planets.map((planet) =>{
