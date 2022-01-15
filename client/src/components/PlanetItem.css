@@ -1,21 +1,25 @@
-.planet-flex {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: none;
-}
-
 li {
     list-style: none;
 }
 
-li:hover {
+.scalable:hover {
     cursor: pointer;
 }
 
 .scalable {
-    width: 200px;
+    position: relative;
+    width: 75px;
     height: auto;
+    z-index: 2;
+    visibility: visible;
+}
+
+#Saturn {
+    width: 150px;
+    height: auto;
+}
+
+.drop-shadow {
+    filter: drop-shadow(0 0 2mm #000) 
 }
 
