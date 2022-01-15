@@ -1,19 +1,13 @@
 import { useState, useEffect } from 'react';
 import PlanetsList from "../components/Home/PlanetsList";
 
-const PlanetsContainer = () => { 
-    const [planets, setPlanets] = useState([]);
-    const [selectedPlanets, setSelectedPlanets] = useState([]);
 
-    useEffect(() => {
-      getPlanets();
-    }, []);
+const PlanetsContainer = ({planets}) => {
   
-    const getPlanets = () => {
-      fetch("http://127.0.0.1:5000/api/planets")
-        .then(results => results.json())
-        .then(data => setPlanets(data));
-    };
+  const [selectedPlanets, setSelectedPlanets] = useState([]);
+
+  
+
 
   const onPlanetClick = (planetName) => {
     const names = selectedPlanets.includes(planetName);
