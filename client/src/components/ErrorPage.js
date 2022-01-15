@@ -1,7 +1,10 @@
 import './ErrorPage.css'
 
 const ErrorPage = ()=> (
-    <h1 id="text">404 - PAGE NOT FOUND</h1>
-  )
+    <>
+        <div className="alien"></div>
+        <h1 id="text">404 - I HAVE EATEN YOUR PAGE</h1>
+    </>
+  );
   
-  export default ErrorPage
+  export default ErrorPage;
