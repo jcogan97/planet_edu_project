@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import PlanetsList from "../components/PlanetsList";
+import PlanetsList from "../components/Home/PlanetsList";
 
 const PlanetsContainer = () => {
   const [planets, setPlanets] = useState([]);
