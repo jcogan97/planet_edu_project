@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import PlanetsList from "../components/PlanetsList";
-import PlanetDetails from '../components/PlanetDetails';
 
 const PlanetsContainer = () => {
   const [planets, setPlanets] = useState([]);
@@ -16,11 +15,11 @@ const PlanetsContainer = () => {
       .then(data => setPlanets(data));
   };
 
-  const onPlanetClick = (planet) => {
-    const names = selectedPlanets.filter(selected => selected.name === planet.name);
+  const onPlanetClick = (planetName) => {
+    const names = selectedPlanets.includes(planetName);
     if (names == false) {
-      setSelectedPlanets([...selectedPlanets, planet]);
-      console.log(planet);
+      setSelectedPlanets([...selectedPlanets, planetName]);
+      console.log(planetName);
       console.log(selectedPlanets);
     };
 
@@ -29,10 +28,8 @@ const PlanetsContainer = () => {
 
   return (
     <>
-      <div className='main-container'>
-        <PlanetsList planets={planets} onPlanetClick={onPlanetClick} />
-        {selectedPlanets && <PlanetDetails planets={selectedPlanets} />}
-      </div>
+      <PlanetsList planets={planets} onPlanetClick={onPlanetClick} selectedPlanets={selectedPlanets} />
+      {/* {selectedPlanets && <PlanetDetails planets={selectedPlanets} />} */}
     </>
   );
 };

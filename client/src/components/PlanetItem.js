@@ -3,7 +3,7 @@ import './PlanetItem.css';
 const PlanetItem = ({planet, onPlanetClick}) => {
 
   const handleClick = () => {
-    onPlanetClick(planet);
+    onPlanetClick(planet.name);
   };
 
 

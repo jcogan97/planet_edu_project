@@ -1,6 +1,6 @@
 .planet-flex {
     align-items: center;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     margin: none;
