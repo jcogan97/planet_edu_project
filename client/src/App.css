@@ -4,11 +4,10 @@ body {
   background-size: 512px;
   background-position: 0;
 
-  animation: slideleft 80s linear 1s infinite;
+  animation: slideleft 75s linear 1s infinite;
 }
 
 @keyframes slideleft {
   0% { background-position: 0 0; }
-  50% { background-position: -500px 0; }
-  100% { background-position: 0 0; }
+  100% { background-position: -512px 0; }
 }

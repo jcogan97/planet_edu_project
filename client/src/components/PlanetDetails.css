@@ -14,6 +14,7 @@
 }
 
 #card-banner {
+    color: white;
     background: linear-gradient(90deg, #FC5C7D 0%, #6A82FB 100%);
     overflow: hidden;
 }
