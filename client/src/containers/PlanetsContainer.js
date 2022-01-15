@@ -7,7 +7,7 @@ const PlanetsContainer = () => {
 
   useEffect(() => {
     getPlanets();
-  });
+  }, []);
 
   const getPlanets = () => {
     fetch("http://127.0.0.1:5000/api/planets")
@@ -17,7 +17,7 @@ const PlanetsContainer = () => {
 
   const onPlanetClick = (planetName) => {
     const names = selectedPlanets.includes(planetName);
-    if (names == false) {
+    if (names === false) {
       setSelectedPlanets([...selectedPlanets, planetName]);
       console.log(planetName);
       console.log(selectedPlanets);
