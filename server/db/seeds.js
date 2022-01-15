@@ -65,7 +65,7 @@ db.planets.insertMany(
         },
         {
             name: "Saturn",
-            image: "https://assets.stickpng.com/thumbs/580b585b2edbce24c47b270c.png",
+            image: "https://www.solarsystemscope.com/spacepedia/images/handbook/renders/saturn.png",
             number_of_moons: 62,
             notable_moons: ["Titan", "Rhea", "Enceladus"],
             position_from_sun: 6,
