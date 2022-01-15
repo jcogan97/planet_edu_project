@@ -9,6 +9,7 @@ import NavBar from './components/NavBar';
 
 
 function App() {
+
   const [planets, setPlanets] = useState([]);
   useEffect(() => {
     getPlanets();
@@ -20,15 +21,20 @@ function App() {
       .then(data => setPlanets(data));
   };
 
+  
+
+
   return (
     <Router>
     <>
       <NavBar/>
       <Switch>
+
       <Route 
         exact path="/"
         render={() => <PlanetsContainer planets={planets} className="planets-container"/>} 
       />
+
       <Route path="/quiz" component={Quiz} />
       <Route 
         path="/compare-planets"

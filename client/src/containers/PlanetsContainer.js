@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import PlanetsList from "../components/Home/PlanetsList";
 
+
 const PlanetsContainer = ({planets}) => {
   
   const [selectedPlanets, setSelectedPlanets] = useState([]);
 
   
+
 
   const onPlanetClick = (planetName) => {
     const names = selectedPlanets.includes(planetName);
