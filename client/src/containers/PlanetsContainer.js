@@ -28,7 +28,7 @@ const PlanetsContainer = () => {
 
   return (
     <>
-      <PlanetsList planets={planets} onPlanetClick={onPlanetClick} selectedPlanets={selectedPlanets} />
+      <PlanetsList planets={planets} onPlanetClick={onPlanetClick} selectedPlanets={selectedPlanets} className="planet-list"/>
       {/* {selectedPlanets && <PlanetDetails planets={selectedPlanets} />} */}
     </>
   );
