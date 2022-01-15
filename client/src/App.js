@@ -1,4 +1,5 @@
 import './App.css';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"; 
 import PlanetsContainer from './containers/PlanetsContainer';
 import ErrorPage from './components/ErrorPage';
@@ -8,12 +9,14 @@ import NavBar from './components/NavBar';
 
 
 function App() {
+  
+
   return (
     <Router>
     <>
       <NavBar/>
       <Switch>
-      <Route exact path="/" component={PlanetsContainer} className="planets-container" />
+      <Route exact path="/" component={PlanetsContainer}/>
       <Route path="/quiz" component={Quiz} />
       <Route path="/compare-planets" component={ComparePlanets} />
       <Route component={ErrorPage} />
