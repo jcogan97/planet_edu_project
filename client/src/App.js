@@ -11,6 +11,7 @@ import NavBar from './components/NavBar';
 function App() {
 
   const [planets, setPlanets] = useState([]);
+  
   useEffect(() => {
     getPlanets();
   }, []);
@@ -32,7 +33,7 @@ function App() {
 
       <Route 
         exact path="/"
-        render={() => <PlanetsContainer planets={planets} className="planets-container"/>} 
+        render={() => <PlanetsContainer planets={planets} setPlanets={setPlanets} className="planets-container"/>} 
       />
 
       <Route path="/quiz" component={Quiz} />
