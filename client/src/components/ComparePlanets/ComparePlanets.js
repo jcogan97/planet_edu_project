@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import BirthDateForm from './BirthDateForm';
+import AgeForm from './AgeForm';
 import GetAges from './GetAges';
 import PlanetListWithAges from './PlanetListWithAges';
 
@@ -8,10 +8,11 @@ import PlanetListWithAges from './PlanetListWithAges';
 
 const ComparePlanets = ({planets}) => {
 
-    const [birthDate, setBirthDate] = useState("");
+    const [age, setAge] = useState(0);
 
     const handleDateInput = (event) => {
-        setBirthDate(event.target.value);
+        setAge(event.target[0].value);
+        console.log(event);
     };
 
  
@@ -23,10 +24,10 @@ const ComparePlanets = ({planets}) => {
 
     return (
         <>
-            <BirthDateForm handleDateInput={handleDateInput} />
+            <AgeForm handleDateInput={handleDateInput} />
             
                 <>
-                    <PlanetListWithAges planets={planets} birthDate={birthDate}/>
+                    <PlanetListWithAges planets={planets} age={age}/>
                 </>
                 
             
