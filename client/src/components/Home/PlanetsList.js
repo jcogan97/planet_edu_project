@@ -18,6 +18,7 @@ const PlanetList = ({ planets, onPlanetClick, selectedPlanets, setPlanets }) => 
                 planets.map((planet, index) => (
                   <Draggable key={planet._id} draggableId={planet._id} index={index}>
                     {(provided) => (
+
                       <li {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
                         <div className={`list-container-${index}`} key={`Container${index}`}>
                           {
