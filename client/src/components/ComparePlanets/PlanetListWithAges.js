@@ -1,6 +1,6 @@
 import PlanetItemWithAge from './PlanetItemWithAge';
 import '../Home/PlanetsList.css';
-import GetAges from './GetAges';
+import "./PlanetListAge.css"
 import './ComparePlanet.css';
 
 
@@ -14,6 +14,7 @@ const PlanetListWithAges = ({planets, age}) => {
                         {
                             <>
                                 <PlanetItemWithAge planet={planet} age={age} key={planet._id}/>
+                               
                                 
                         
                                 
