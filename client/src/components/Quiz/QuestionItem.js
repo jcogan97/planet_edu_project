@@ -1,17 +1,26 @@
-const QuestionItem = ({question, answers, correctAnswer}) => {
+import { useState , useEffect} from "react";
 
-    const formData = new FormData();
-    console.log(formData);
+const QuestionItem = ({question, answers, correctAnswer, index, result, setResult}) => {
+
+
+    const pushResult = (event) => {
+
+        const value = event.target.value
+        result[index] = value
+        console.log("index:", index, "result:", result, "correct answer:", correctAnswer);
+        };
+    
+    
 
     return(
         <>
+            <div className="question">
             <p id="text-is-evil">{question}</p>
-            
-                <input type="radio" id={answers.a} name={question} value={answers.a}/>
-                <label for={answers.a} id="text-is-evil">{answers.a}</label>
-                <input type="radio" id={answers.b} name={question} value={answers.b}/>
-                <label for={answers.b} id="text-is-evil">{answers.b}</label>
-            
+                <input type="radio" name={index} value="a" onChange={pushResult} />
+                <label id="text-is-evil" htmlFor="{answers.a}">{answers.a}</label>
+                <input type="radio" name={index} value="b" onChange={pushResult} />
+                <label id="text-is-evil" htmlFor="{answers.b}">{answers.b}</label>
+            </div>
         </>
     );
 }
