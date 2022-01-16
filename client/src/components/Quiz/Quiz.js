@@ -9,29 +9,40 @@ const Quiz = () => {
             answers: {
                 a: 'Earth',
                 b: 'Venus',
-                c: 'Saturn',
-                d: 'Mars'
             },
             correctAnswer: 'b'
         },
         {
             question: "What's the largest Planet in our solar system?",
             answers: {
-                a: 'Saturn',
+                a: 'Jupiter',
                 b: 'Uranus',
-                c: 'Earth',
-                d: 'Jupiter'
             },
-            correctAnswer: 'd'
+            correctAnswer: 'a'
         },
         {
             question: "Which planet was discovered most recently?",
             answers: {
-                a: 'Mars',
-                b: 'Mercury',
-                c: 'Neptune'
+                a: 'Mercury',
+                b: 'Neptune'
             },
-            correctAnswer: 'c'
+            correctAnswer: 'b'
+        },
+        {
+            question: "How many known rings does Neptune have?",
+            answers: {
+                a: '14',
+                b: '17',
+            },
+            correctAnswer: 'a'
+        },
+        {
+            question: "How many moons does Saturn have?",
+            answers: {
+                a: '57',
+                b: '62',
+            },
+            correctAnswer: 'b'
         },
         {
             question: "Is Pluto a planet?",
