@@ -4,7 +4,7 @@ import GetAges from './GetAges';
 import './ComparePlanet.css';
 
 
-const PlanetListWithAges = ({planets, birthDate}) => {
+const PlanetListWithAges = ({planets, age}) => {
     
     return(
         <div className="pizza-planet">
@@ -13,7 +13,7 @@ const PlanetListWithAges = ({planets, birthDate}) => {
                     <div className={`list-container-${index}`} key={`Container${index}`}>
                         {
                             <>
-                                <PlanetItemWithAge planet={planet} birthDate={birthDate} key={planet._id}/>
+                                <PlanetItemWithAge planet={planet} age={age} key={planet._id}/>
                                 
                         
                                 
