@@ -1,0 +1,41 @@
+.primary-nav {
+    display: flex;
+
+    justify-content: space-evenly;
+
+    position: relative;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    height: 5.5vh;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.2rem);
+}
+
+.nav-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.primary-nav a {
+
+    text-decoration: none;
+    padding: 10px;
+    overflow: hidden;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    transition: .20s ease-in-out;
+}
+
+.primary-nav a:hover {
+    color: black;
+    background-color: white;
+}
