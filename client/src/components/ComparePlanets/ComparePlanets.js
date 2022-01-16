@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import AgeForm from './AgeForm';
-import GetAges from './GetAges';
 import PlanetListWithAges from './PlanetListWithAges';
 
 
