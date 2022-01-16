@@ -38,7 +38,7 @@ function App() {
       <Route path="/quiz" component={Quiz} />
       <Route 
         path="/compare-planets"
-        render={() => <ComparePlanets planets={planets}/>} 
+        render={() => <ComparePlanets planets={planets} />} 
       />
       <Route component={ErrorPage} />
       </Switch>
