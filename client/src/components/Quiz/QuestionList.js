@@ -19,6 +19,7 @@ const QuestionList = ({questions}) => {
 		event.preventDefault();
         const numberOfCorrectAnswers = results.length
         setNumber(numberOfCorrectAnswers);
+        console.log(event);
     };
 
     
