@@ -14,7 +14,8 @@ db.planets.insertMany(
             first_record: "14th Century BC",
             recorded_by: "Assyrian astronomers",
             average_surface_temperature_c: 127,
-            equatorial_circumference_km: 15329
+            equatorial_circumference_km: 15329,
+            multiple_of_earth_gravity: 0.38
         },
         {
             name: "Venus",
@@ -27,7 +28,8 @@ db.planets.insertMany(
             first_record: "14th Century BC",
             recorded_by: "Babylonian astronomers",
             average_surface_temperature_c: 462,
-            equatorial_circumference_km: 38025
+            equatorial_circumference_km: 38025,
+            multiple_of_earth_gravity: 0.91
         },
         {
             name: "Earth",
@@ -53,7 +55,8 @@ db.planets.insertMany(
             first_record: "2nd Millenium B",
             recorded_by: "Egyptian astronomers",
             average_surface_temperature_c: -46,
-            equatorial_circumference_km: 21297
+            equatorial_circumference_km: 21297,
+            multiple_of_earth_gravity: 0.38
         },
         {
             name: "Jupiter",
@@ -66,7 +69,8 @@ db.planets.insertMany(
             first_record: "7th or 8th Century BC",
             recorded_by: "Babylonian astronomers",
             average_surface_temperature_c: -108,
-            equatorial_circumference_km: 439264
+            equatorial_circumference_km: 439264,
+            multiple_of_earth_gravity: 2.34
         },
         {
             name: "Saturn",
@@ -79,7 +83,8 @@ db.planets.insertMany(
             first_record: "8th Century BC",
             recorded_by: "Assyrians",
             average_surface_temperature_c: -139,
-            equatorial_circumference_km: 365882
+            equatorial_circumference_km: 365882,
+            multiple_of_earth_gravity: 1.06
         },
         {
             name: "Uranus",
@@ -92,7 +97,8 @@ db.planets.insertMany(
             first_record: "March 13th 1781",
             recorded_by: "William Herschel",
             average_surface_temperature_c: -197,
-            equatorial_circumference_km: 159354
+            equatorial_circumference_km: 159354,
+            multiple_of_earth_gravity: 0.92
         },
         {
             name: "Neptune",
@@ -105,7 +111,8 @@ db.planets.insertMany(
             first_record: "September 23rd 1846",
             recorded_by: "Urbain Jean Joseph Le Verrier & Johann Galle",
             average_surface_temperature_c: -201,
-            equatorial_circumference_km: 155600
+            equatorial_circumference_km: 155600,
+            multiple_of_earth_gravity: 1.19
         }
     ]
 );

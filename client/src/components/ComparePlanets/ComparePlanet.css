@@ -16,6 +16,22 @@
     margin-top: 5vh;
 }
 
+#info {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.2rem);
+    overflow: hidden;
+    width: 25vw;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+}
+
+
+
+
 #submit-button {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(.2rem);
@@ -49,3 +65,16 @@
     background: rgba(255, 255, 255, 0.1);
     color: white;
 }
+
+#relative-top-weight {
+    position: relative;
+    top: 75px;
+    
+  }
+
+  #relative-bottom-weight {
+    position: relative;
+    bottom: 75px;
+    
+  }
+

@@ -20,6 +20,8 @@ const PlanetItemWithAge = ({planet, age}) => {
     
   }
 
+
+
 const relativeAge = getAges(planet, age);
   if (age > 0) {
     if (planet.position_from_sun % 2 === 0) {
@@ -30,7 +32,7 @@ const relativeAge = getAges(planet, age);
             </div>
           
             <div id="relative">
-            <p id="display-text">{relativeAge} {planet.name} years</p>
+            <p id="display-text">{planet.name}: {relativeAge} years</p>
             </div>
           </>
       )
@@ -40,7 +42,7 @@ const relativeAge = getAges(planet, age);
         <>
 
             <div id="relative-top">
-            <p id="display-text">{relativeAge} {planet.name} years</p>
+            <p id="display-text">{planet.name}: {relativeAge} years</p>
             </div>
             
 

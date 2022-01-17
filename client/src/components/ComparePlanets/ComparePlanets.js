@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import AgeForm from './AgeForm';
+import DataForm from './DataForm';
 import PlanetListWithAges from './PlanetListWithAges';
 import './ComparePlanet.css';
+import PlanetListWithWeight from './PlanetListWithWeight';
 
 
 
@@ -9,10 +10,16 @@ import './ComparePlanet.css';
 const ComparePlanets = ({planets}) => {
 
     const [age, setAge] = useState(0);
+    const [weight, setWeight] = useState(0);
 
     const handleDateInput = (event) => {
         setAge(event.target[0].value);
-        console.log(event);
+        setWeight(0);
+    };
+
+    const handleWeightInput = (event) => {
+        setWeight(event.target[0].value);
+        setAge(0);
     };
 
  
@@ -24,14 +31,22 @@ const ComparePlanets = ({planets}) => {
 
     return (
         <>
+        
+        
         <div id="info">
-            <AgeForm handleDateInput={handleDateInput} />
+            <DataForm handleDateInput={handleDateInput} handleWeightInput={handleWeightInput} />
         </div>
+        
+            {weight === 0
+            ?
+            <>
+            <PlanetListWithAges planets={planets} age={age}/>
+            </>
+            :
+            <PlanetListWithWeight planets={planets} weight={weight} />
+            }
             
-            
-                <>
-                    <PlanetListWithAges planets={planets} age={age}/>
-                </>
+                
                 
             
             
