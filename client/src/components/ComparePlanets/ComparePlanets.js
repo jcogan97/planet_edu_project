@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AgeForm from './AgeForm';
 import PlanetListWithAges from './PlanetListWithAges';
+import './ComparePlanet.css';
 
 
 
@@ -23,7 +24,10 @@ const ComparePlanets = ({planets}) => {
 
     return (
         <>
+        <div id="info">
             <AgeForm handleDateInput={handleDateInput} />
+        </div>
+            
             
                 <>
                     <PlanetListWithAges planets={planets} age={age}/>
