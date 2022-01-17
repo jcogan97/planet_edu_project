@@ -5,7 +5,7 @@ const Quiz = () => {
 
     const myQuestions =[
         {
-            question: "Planet is closest to the sun?",
+            question: "Which planet is closest to the sun?",
             answers: {
                 a: 'Earth',
                 b: 'Venus',
@@ -17,6 +17,14 @@ const Quiz = () => {
             answers: {
                 a: '6',
                 b: '2',
+            },
+            correctAnswer: 'a'
+        },
+        {
+            question: "Which is a moon of Saturn?",
+            answers: {
+                a: 'Titan',
+                b: 'Phobos',
             },
             correctAnswer: 'a'
         },
