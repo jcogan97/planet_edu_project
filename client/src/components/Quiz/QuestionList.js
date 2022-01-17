@@ -1,15 +1,14 @@
 import {useEffect, useState} from 'react';
 import QuestionItem from "./QuestionItem";
+import './QuestionList.css'
 
 const QuestionList = ({questions}) => {
     
     const [number, setNumber] = useState(0)
     
-
     const results = []
 
-
-    
+    // const isHidden = (results.length = 0) ? "visible" : "hidden"
 
     const listOfQuestions = questions.map((question, index) => {
         return <QuestionItem question={question.question} answers={question.answers} correctAnswer={question.correctAnswer} index={index} results={results} />
@@ -28,7 +27,7 @@ const QuestionList = ({questions}) => {
             <form onSubmit={handleSubmit}>
                 {listOfQuestions}
                 <input type="submit"/>
-                <p id="text-is-evil">you got {number} right!</p>
+                <p /* className={isHidden} */ id="text-is-evil">you got {number} right!</p>
             </form>
         </>
     );
