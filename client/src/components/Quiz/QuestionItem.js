@@ -11,9 +11,6 @@ const QuestionItem = ({question, answers, correctAnswer, index, results}) => {
         if( value === correctAnswer){
             results.push(value)
         };
-        
-        console.log("results:", results, "correct answer:", correctAnswer, "value:", value);
-
         };
     
         
