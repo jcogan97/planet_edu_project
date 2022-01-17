@@ -7,66 +7,66 @@ const Quiz = () => {
         {
             question: "Which planet is closest to the sun?",
             answers: {
-                a: 'a. Earth',
-                b: 'b. Venus',
+                a: 'Earth',
+                b: 'Venus',
             },
-            correctAnswer: 'b'
+            correctAnswer: 'Venus'
         },
         {
             question: "What position from the sun is Saturn?",
             answers: {
-                a: 'a. 6',
-                b: 'b. 2',
+                a: '6',
+                b: '2',
             },
-            correctAnswer: 'a'
+            correctAnswer: '6'
         },
         {
             question: "Which is a moon of Saturn?",
             answers: {
-                a: 'a. Titan',
-                b: 'b. Phobos',
+                a: 'Titan',
+                b: 'Phobos',
             },
-            correctAnswer: 'a'
+            correctAnswer: 'Titan'
         },
         {
             question: "What's the largest Planet in our solar system?",
             answers: {
-                a: 'a. Jupiter',
-                b: 'b. Uranus',
+                a: 'Jupiter',
+                b: 'Uranus',
             },
-            correctAnswer: 'a'
+            correctAnswer: 'Jupiter'
         },
         {
             question: "Which planet was discovered most recently?",
             answers: {
-                a: 'a. Mercury',
-                b: 'b. Neptune'
+                a: 'Mercury',
+                b: 'Neptune'
             },
-            correctAnswer: 'b'
+            correctAnswer: 'Neptune'
         },
         {
             question: "How many known rings does Neptune have?",
             answers: {
-                a: 'a. 14',
-                b: 'b. 17',
+                a: '14',
+                b: '17',
             },
-            correctAnswer: 'a'
+            correctAnswer: '14'
         },
         {
             question: "How many moons does Saturn have?",
             answers: {
-                a: 'a. 57',
-                b: 'b. 62',
+                a: '57',
+                b: '62',
             },
-            correctAnswer: 'b'
+            correctAnswer: '62'
         },
         {
             question: "Is Pluto a planet?",
             answers: {
-                a: 'a. Yes',
-                b: 'b. No',
+                a: 'Yes',
+                b: 'No',
             },
-            correctAnswer: 'b'
+            correctAnswer: 'No'
         },
     ];
 
