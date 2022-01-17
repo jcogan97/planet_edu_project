@@ -24,6 +24,7 @@ function App() {
   };
 
   return (
+    <>
     <Router>
     <>
       <NavBar/>
@@ -47,6 +48,8 @@ function App() {
       </Switch>
     </>
     </Router>
+    <img id="the-sun" src="https://pluspng.com/img-png/sun-png-bright-sun-2249.png" alt="The Shiny Thing in the Sky"/>
+    </>
   );
 }
 
