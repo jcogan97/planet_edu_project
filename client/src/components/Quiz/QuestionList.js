@@ -32,16 +32,24 @@ const QuestionList = ({ questions }) => {
     setNumber(runningTotal)
   };
 
-
-  return (
-    <>
+  if(number >= 1){
+    return (
+      <>
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
         <input type="submit" />
         <p id="text-is-evil">You got {number} right!</p>
       </form>
-    </>
-  );
+      </>
+    )} 
+  else {
+    return(
+      <form id="form" onSubmit={handleSubmit}>
+        {listOfQuestions}
+        <input type="submit" />
+      </form>
+    )
+  }
 }
 
 export default QuestionList;
