@@ -6,6 +6,7 @@
 #info {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(.2rem);
+    overflow: hidden;
     width: 25vw;
     border-radius: 30px;
     text-align: center;
@@ -26,3 +27,19 @@
     margin-right: auto;
     margin-top: 1vh;
 }
+
+#relative {
+    position: relative;
+    top: 50px;
+    
+  }
+
+  #relative-top {
+    position: relative;
+    bottom: 50px;
+    
+  }
+  
+  #absolute {
+    position: absolute;
+  }

@@ -22,14 +22,36 @@ const PlanetItemWithAge = ({planet, age}) => {
 
 const relativeAge = getAges(planet, age);
   if (age > 0) {
-    return (
-      <>
-          <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
-        
-          <p id="display-text">{relativeAge} {planet.name} years</p>
+    if (planet.position_from_sun % 2 === 0) {
+      return (
+        <>
+            <div id="absolute">
+            <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
+            </div>
+          
+            <div id="relative">
+            <p id="display-text">{relativeAge} {planet.name} years</p>
+            </div>
           </>
-    )
-  }
+      )
+    }
+    else {
+      return (
+        <>
+            <div id="relative-top">
+            <p id="display-text">{relativeAge} {planet.name} years</p>
+            </div>
+            
+
+          <div id="absolute">
+            <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
+          </div>
+          </>
+      )
+    }
+     }
+    
+  
   else {
     return(
       <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
@@ -37,7 +59,8 @@ const relativeAge = getAges(planet, age);
     
 
   }
-  }
+}
+
     
    
   export default PlanetItemWithAge;
