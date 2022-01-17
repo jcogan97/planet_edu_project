@@ -42,7 +42,7 @@ const QuestionList = ({ questions }) => {
   const incorrectNodes = () => {
     const array = []
     for (const [key, value] of Object.entries(incorrectAnswers)) {
-    const pTag= <p>{key}:{value} </p>
+    const pTag= <p>{key}: {value} </p>
     array.push(pTag)
   }
   return array
