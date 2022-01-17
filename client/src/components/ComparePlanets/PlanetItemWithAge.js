@@ -16,10 +16,8 @@ const relativeAge = getAges(planet, age);
   
       return (
         <>
-        <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
-        <p id="display-text">{relativeAge} {planet.name} years</p>
-        
-        
+          <img className='scalable drop-shadow' id={ planet.name } src={ planet.image } alt={ planet.name } />
+          <p id="display-text">{relativeAge} {planet.name} years</p>
         </>
       );
   }
