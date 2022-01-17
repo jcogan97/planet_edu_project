@@ -37,7 +37,7 @@ const QuestionList = ({ questions }) => {
       <>
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
-        <input type="submit" />
+        <input id="submit" type="submit" />
         <p id="text-is-evil">You got {number} right!</p>
       </form>
       </>
@@ -46,7 +46,7 @@ const QuestionList = ({ questions }) => {
     return(
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
-        <input type="submit" />
+        <input id="submit" type="submit" />
       </form>
     )
   }
