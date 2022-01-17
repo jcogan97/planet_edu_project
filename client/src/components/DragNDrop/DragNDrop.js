@@ -1,9 +1,9 @@
 import DragPlanetList from "./DragPlanetList";
 
-const DragNDrop = ({planets, setPlanets}) => {
+const DragNDrop = ({planets}) => {
     return (
         <>
-            <DragPlanetList planets={planets} setPlanets={setPlanets}/>
+            <DragPlanetList planets={planets} />
         </>
     );
 }
