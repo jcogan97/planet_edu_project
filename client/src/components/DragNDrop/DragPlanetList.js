@@ -20,7 +20,7 @@ const DragPlanetList = ({ planets, setPlanets }) => {
   return (
     <div id="menu">
       <DragDropContext onDragEnd={handleOnDragEnd}>
-        <Droppable droppableId="planets">
+        <Droppable droppableId="planets" direction="horizontal">
           {(provided) => (
             <div className="table">
               <ul className="planet-ul-list" {...provided.droppableProps} ref={provided.innerRef}>
