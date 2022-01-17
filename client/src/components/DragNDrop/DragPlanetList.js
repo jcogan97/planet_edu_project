@@ -3,23 +3,10 @@ import './DragPlanetList.css';
 import {DragDropContext, Droppable, Draggable} from 'react-beautiful-dnd';
 
 
-const DragPlanetList = ({ planets, setPlanets }) => {
-
-  const handleOnDragEnd = (result) => {
-    if (!result.destination) return;
-
-    console.log(result)
-
-    const items = Array.from(planets);
-    const [reorderedItems] = items.splice(result.source.index, 1);
-    items.splice(result.destination.index, 0, reorderedItems);
-    setPlanets(items);
-    
-  }
-
+const DragPlanetList = ({ planets }) => {
   return (
     <div id="menu">
-      <DragDropContext onDragEnd={handleOnDragEnd}>
+      <DragDropContext>
         <Droppable droppableId="planets">
           {(provided) => (
             <div className="table">
@@ -37,6 +24,7 @@ const DragPlanetList = ({ planets, setPlanets }) => {
                           </div>
                         </li>
 
+                      
                       )}
                     </Draggable>
                   ))

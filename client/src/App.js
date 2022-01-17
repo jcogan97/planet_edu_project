@@ -23,9 +23,7 @@ function App() {
       .then(data => setPlanets(data));
   };
 
-  const updatePlanets = (newPlanets) => {
-    setPlanets(newPlanets);
-  }
+  
 
 
   return (
@@ -46,7 +44,7 @@ function App() {
       />
       <Route 
         path="/order-planets"
-        render={() => <DragNDrop setPlanets={updatePlanets} planets={planets} />} 
+        render={() => <DragNDrop planets={planets} />} 
       />
       <Route component={ErrorPage} />
       </Switch>
