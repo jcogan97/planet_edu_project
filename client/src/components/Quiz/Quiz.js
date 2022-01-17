@@ -13,6 +13,14 @@ const Quiz = () => {
             correctAnswer: 'b'
         },
         {
+            question: "What position from the sun is Saturn?",
+            answers: {
+                a: '6',
+                b: '2',
+            },
+            correctAnswer: 'a'
+        },
+        {
             question: "What's the largest Planet in our solar system?",
             answers: {
                 a: 'Jupiter',
@@ -56,10 +64,10 @@ const Quiz = () => {
 
 
     return(
-        <>
-            <h1 id='text-is-evil'>Test your planet knowledge!</h1>
+        <div id="quiz">
+            <h1 id='header'>Test your planet knowledge!</h1>
         <QuestionList questions={myQuestions} />
-        </>
+        </div>
     );
 };
 
