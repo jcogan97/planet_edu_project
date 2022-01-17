@@ -1,6 +1,5 @@
 import PlanetItemWithAge from './PlanetItemWithAge';
 import '../Home/PlanetsList.css';
-import "./PlanetListAge.css"
 import './ComparePlanet.css';
 
 
