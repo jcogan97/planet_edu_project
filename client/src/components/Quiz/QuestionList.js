@@ -33,22 +33,21 @@ const QuestionList = ({ questions }) => {
         }
       }
     }
-    console.log(answers);
+    // console.log(answers);
     setNumber(runningTotal)
     setIncorrectAnswers(answers)
-    console.log(incorrectAnswers);
+    // console.log(incorrectAnswers);
   };
 
   const incorrectNodes = () => {
     const array = []
     for (const [key, value] of Object.entries(incorrectAnswers)) {
-    const pTag= <p>{key}{value} </p>
+    const pTag= <p>{key}:{value} </p>
     array.push(pTag)
   }
   return array
 }
 
-console.log(incorrectNodes);
 
 
   if(number >= 1){
@@ -58,8 +57,9 @@ console.log(incorrectNodes);
         {listOfQuestions}
         <input id="submit" type="submit" />
         <p id="text-is-evil">You got {number} right!</p>
-        {incorrectNodes}
       </form>
+      <p>Correct Answers:</p>
+        {incorrectNodes()}
       </>
     )} 
   else {
