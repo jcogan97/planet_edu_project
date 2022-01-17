@@ -1,16 +1,22 @@
 import { useState , useEffect} from "react";
 
-const QuestionItem = ({question, answers, correctAnswer, index, result, setResult}) => {
+const QuestionItem = ({question, answers, correctAnswer, index, results}) => {
+
+    
 
 
     const pushResult = (event) => {
 
         const value = event.target.value
-        result[index] = value
-        console.log("index:", index, "result:", result, "correct answer:", correctAnswer);
+        if( value === correctAnswer){
+            results.push(value)
+        };
+        
+        console.log("results:", results, "correct answer:", correctAnswer, "value:", value);
+
         };
     
-    
+        
 
     return(
         <>

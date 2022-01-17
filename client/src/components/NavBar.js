@@ -15,6 +15,9 @@ const NavBar = () => {
         <li>
           <Link to="/quiz">Test your knowledge!</Link>
         </li>
+        <li>
+          <Link to="/compare-planets">See How Old You Are On Different Planets!</Link>
+        </li>
       </ul>
     </nav>
   );
