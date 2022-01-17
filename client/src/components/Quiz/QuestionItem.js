@@ -1,17 +1,15 @@
 import { useState , useEffect} from "react";
 
-const QuestionItem = ({question, answers, correctAnswer, index, results}) => {
+const QuestionItem = ({question, answers, correctAnswer, index, results, handleResults}) => {
 
     
 
 
     const pushResult = (event) => {
-
-        const value = event.target.value
-        if( value === correctAnswer){
-            results.push(value)
-        };
-        };
+        const temp = {...results}
+        temp[event.target.name] = event.target.value
+        handleResults(temp)
+    };
     
         
 
@@ -19,9 +17,9 @@ const QuestionItem = ({question, answers, correctAnswer, index, results}) => {
         <>
             <div className="question">
             <p id="text-is-evil">{question}</p>
-                <input type="radio" name={index} value="a" onChange={pushResult} />
+                <input type="radio" name={question} value="a" onChange={pushResult} />
                 <label id="text-is-evil" htmlFor="{answers.a}">{answers.a}</label>
-                <input type="radio" name={index} value="b" onChange={pushResult} />
+                <input type="radio" name={question} value="b" onChange={pushResult} />
                 <label id="text-is-evil" htmlFor="{answers.b}">{answers.b}</label>
             </div>
         </>
