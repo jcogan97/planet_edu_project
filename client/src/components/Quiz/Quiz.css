@@ -3,13 +3,6 @@
 }
 
 #form {
-}
-
-#header {
-    color: white;
-}
-
-#quiz {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(.2rem);
     width: 25vw;
@@ -18,5 +11,45 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    
+    padding: 0.2vh;
+}
+
+#header {
+    color: white;
+    text-align: center;
+}
+#submit {
+    margin-top: 1.5vh;
+    color: white;
+    background: rgba(163, 142, 142, 0.6);
+    border-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#flex-container{
+    display: flex;
+    flex-grow: 4;
+    flex-direction: row;
+}
+
+#quiz {
+
+}
+
+#radio{
+    cursor: pointer;
+}
+
+.answers{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.2rem);
+    width: 25vw;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5vh;
 }

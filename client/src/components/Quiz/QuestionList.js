@@ -53,13 +53,17 @@ const QuestionList = ({ questions }) => {
   if(number >= 1){
     return (
       <>
+      <div id="flex-container">
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
         <input id="submit" type="submit" />
         <p id="text-is-evil">You got {number} right!</p>
       </form>
-      <p>Correct Answers:</p>
+      <div className='answers'>
+        <p>Correct Answers:</p>
         {incorrectNodes()}
+      </div>
+      </div>
       </>
     )} 
   else {
