@@ -24,7 +24,7 @@ const QuestionList = ({questions}) => {
     
     return(
         <>
-            <form onSubmit={handleSubmit}>
+            <form id="form" onSubmit={handleSubmit}>
                 {listOfQuestions}
                 <input type="submit"/>
                 <p /* className={isHidden} */ id="text-is-evil">you got {number} right!</p>
