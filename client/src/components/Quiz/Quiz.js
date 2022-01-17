@@ -7,64 +7,64 @@ const Quiz = () => {
         {
             question: "Which planet is closest to the sun?",
             answers: {
-                a: 'Earth',
-                b: 'Venus',
+                a: 'a. Earth',
+                b: 'b. Venus',
             },
             correctAnswer: 'b'
         },
         {
             question: "What position from the sun is Saturn?",
             answers: {
-                a: '6',
-                b: '2',
+                a: 'a. 6',
+                b: 'b. 2',
             },
             correctAnswer: 'a'
         },
         {
             question: "Which is a moon of Saturn?",
             answers: {
-                a: 'Titan',
-                b: 'Phobos',
+                a: 'a. Titan',
+                b: 'b. Phobos',
             },
             correctAnswer: 'a'
         },
         {
             question: "What's the largest Planet in our solar system?",
             answers: {
-                a: 'Jupiter',
-                b: 'Uranus',
+                a: 'a. Jupiter',
+                b: 'b. Uranus',
             },
             correctAnswer: 'a'
         },
         {
             question: "Which planet was discovered most recently?",
             answers: {
-                a: 'Mercury',
-                b: 'Neptune'
+                a: 'a. Mercury',
+                b: 'b. Neptune'
             },
             correctAnswer: 'b'
         },
         {
             question: "How many known rings does Neptune have?",
             answers: {
-                a: '14',
-                b: '17',
+                a: 'a. 14',
+                b: 'b. 17',
             },
             correctAnswer: 'a'
         },
         {
             question: "How many moons does Saturn have?",
             answers: {
-                a: '57',
-                b: '62',
+                a: 'a. 57',
+                b: 'b. 62',
             },
             correctAnswer: 'b'
         },
         {
             question: "Is Pluto a planet?",
             answers: {
-                a: 'Yes',
-                b: 'No',
+                a: 'a. Yes',
+                b: 'b. No',
             },
             correctAnswer: 'b'
         },
