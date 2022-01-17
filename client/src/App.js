@@ -6,6 +6,7 @@ import ErrorPage from './components/ErrorPage';
 import Quiz from './components/Quiz/Quiz';
 import ComparePlanets from './components/ComparePlanets/ComparePlanets';
 import NavBar from './components/NavBar';
+import DragNDrop from './components/DragNDrop/DragNDrop';
 
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
       <Route 
         path="/compare-planets"
         render={() => <ComparePlanets planets={planets} />} 
+      />
+      <Route 
+        path="/order-planets"
+        render={() => <DragNDrop planets={planets} />} 
       />
       <Route component={ErrorPage} />
       </Switch>

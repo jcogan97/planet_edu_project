@@ -18,6 +18,9 @@ const NavBar = () => {
         <li>
           <Link to="/compare-planets">See How Old You Are On Different Planets!</Link>
         </li>
+        <li>
+          <Link to="/order-planets">Restore the Order</Link>
+        </li>
       </ul>
     </nav>
   );
