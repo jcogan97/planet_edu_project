@@ -6,7 +6,7 @@ const PlanetItemWithAge = ({planet, age}) => {
   const getAges = (planet, age) => {
     
     const ageInt = parseInt(age)
-    const ageRelative = ageInt / planet.orbital_period;
+    const ageRelative = (ageInt / planet.orbital_period).toFixed(2);
     
     return ageRelative;
     
