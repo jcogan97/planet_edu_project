@@ -12,9 +12,9 @@ const AgeForm = ({handleDateInput}) => {
         <div id="display-text">
            <form onSubmit={onSubmit}>
             <label>Please enter your age:</label>
-            <br></br>
+            <br/>
             <input type="number" id="age" />
-            <input type="submit"></input>
+            <input type="submit" id="submit-button"></input>
         </form>
             
             
