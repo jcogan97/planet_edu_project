@@ -9,8 +9,7 @@ const DragPlanetList = ({ planets }) => {
   const [planetOrder, setPlanetOrder] = useState([]);
 
   useEffect(() => {
-    setPlanetOrder(planets);
-    shuffle(planetOrder);
+    setPlanetOrder(shuffle(planets));
   }, [])
 
   const shuffle = (array) => {
