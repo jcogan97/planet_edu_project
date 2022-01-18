@@ -46,7 +46,18 @@ const QuestionList = ({ questions }) => {
     array.push(pTag)
   }
   return array
-}
+  }
+
+  const incorrectArray = (array) => {
+    if(array.length !== 0){
+      return(
+        <div className='answers'>
+        <h2>What you got wrong</h2>
+        <p>{array}</p>
+        </div>
+      )
+    }
+  }
 
 
 
@@ -59,10 +70,7 @@ const QuestionList = ({ questions }) => {
         <input id="submit" type="submit" />
         <p id="text-is-evil">You got {number} right!</p>
       </form>
-      <div className='answers'>
-        <p>Correct Answers:</p>
-        {incorrectNodes()}
-      </div>
+          {incorrectArray(incorrectNodes())}
       </div>
       </>
     )} 

@@ -32,10 +32,7 @@
     display: flex;
     flex-grow: 4;
     flex-direction: row;
-}
-
-#quiz {
-
+    position: relative;
 }
 
 #radio{
@@ -52,4 +49,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0.5vh;
+    position: absolute;
+    right: 7vw;
+    top: 15vh;
 }
