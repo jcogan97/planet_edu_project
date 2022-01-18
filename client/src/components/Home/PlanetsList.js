@@ -8,6 +8,8 @@ const PlanetList = ({ planets, onPlanetClick, selectedPlanets, setPlanets }) => 
   // });
 
   return (
+    <>
+    <h3 id="header">Click on the planets for more information</h3>
     <div className="pizza-planet">
       <ul className="planet-ul-list">
         {
@@ -33,6 +35,7 @@ const PlanetList = ({ planets, onPlanetClick, selectedPlanets, setPlanets }) => 
         }
       </ul>
     </div>
+    </>
   );
 }
 
