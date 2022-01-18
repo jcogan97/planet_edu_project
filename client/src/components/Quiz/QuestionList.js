@@ -33,10 +33,16 @@ const QuestionList = ({ questions }) => {
         }
       }
     }
-    // console.log(answers);
     setNumber(runningTotal)
     setIncorrectAnswers(answers)
-    // console.log(incorrectAnswers);
+  };
+
+  
+  const handleRetry = (event) => {
+    event.preventDefault();
+    setResults({})
+    setNumber(0)
+    setIncorrectAnswers({})
   };
 
   const incorrectNodes = () => {
@@ -52,8 +58,9 @@ const QuestionList = ({ questions }) => {
     if(array.length !== 0){
       return(
         <div className='answers'>
-        <h2>What you got wrong</h2>
-        <p>{array}</p>
+          <h2 id="text-is-evil">You got {number} right!</h2>
+          <h3>Corrections...</h3>
+          <p>{array}</p>
         </div>
       )
     } else {
@@ -72,12 +79,11 @@ const QuestionList = ({ questions }) => {
     return (
       <>
       <div id="flex-container">
-      <form id="form" onSubmit={handleSubmit}>
+      <form id="form">
         {listOfQuestions}
         <div id="submit-btn">
-          <input id="submit" type="submit" />
+          <input id="submit" type="button" value="Retry" onClick={handleRetry}/>
         </div>
-        <p id="text-is-evil">You got {number} right!</p>
       </form>
           {incorrectArray(incorrectNodes())}
       </div>
