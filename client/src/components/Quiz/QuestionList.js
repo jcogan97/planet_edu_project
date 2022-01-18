@@ -67,7 +67,9 @@ const QuestionList = ({ questions }) => {
       <div id="flex-container">
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
-        <input id="submit" type="submit" />
+        <div id="submit-btn">
+          <input id="submit" type="submit" />
+        </div>
         <p id="text-is-evil">You got {number} right!</p>
       </form>
           {incorrectArray(incorrectNodes())}
@@ -78,7 +80,9 @@ const QuestionList = ({ questions }) => {
     return(
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
-        <input id="submit" type="submit" />
+        <div id="submit-btn">
+          <input id="submit" type="submit" />
+        </div>
       </form>
     )
   }

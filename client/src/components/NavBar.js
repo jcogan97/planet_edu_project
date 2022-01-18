@@ -13,10 +13,10 @@ const NavBar = () => {
           <Link to="/" className="link-button">Home</Link>
         </li>
         <li>
-          <Link to="/quiz">Test your knowledge!</Link>
+          <Link to="/compare-planets">Your Life On Another Planet</Link>
         </li>
         <li>
-          <Link to="/compare-planets">See How Old You Are On Different Planets!</Link>
+          <Link to="/quiz">Test Your Knowledge</Link>
         </li>
         <li>
           <Link to="/order-planets">Restore the Order</Link>
