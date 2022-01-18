@@ -56,6 +56,13 @@ const QuestionList = ({ questions }) => {
         <p>{array}</p>
         </div>
       )
+    } else {
+      return(
+        <div className='answers'>
+          <h2>Congratulations!!</h2>
+          <p>You got every question right!</p>
+        </div>
+      )
     }
   }
 
