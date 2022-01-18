@@ -1,5 +1,4 @@
 body {
-  overflow-y: hidden;
   background: url(../images/Tileable_Stars.jpeg);
   background-repeat: repeat;
   background-size: 512px;
@@ -13,13 +12,13 @@ body {
   100% { background-position: -512px 0; }
 }
 
-#the-sun {
-
+#sun-wrapper {
+  overflow: hidden;
+  
   position: absolute;
   margin: 0;
   transform: translate(-100%, -50%);
   z-index: -5;
   top: 52%;
   left: 25%;
-
 }
