@@ -1,10 +1,15 @@
 #display-text {
+    
     color: white;
     visibility: visible;
+    font-family: 'Trispace', sans-serif;
+    
+    
 }
 
 #info {
     background: rgba(255, 255, 255, 0.1);
+    font-family: 'Trispace', sans-serif;
     backdrop-filter: blur(.2rem);
     overflow: hidden;
     width: 25vw;
@@ -13,7 +18,7 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: vh;
 }
 
 #info {
@@ -34,6 +39,7 @@
 
 #submit-button {
     background: rgba(255, 255, 255, 0.1);
+    font-family: 'Trispace', sans-serif;
     backdrop-filter: blur(.2rem);
     width: 25vw;
     border-radius: 30px;
@@ -62,6 +68,7 @@
 
   input { 
     text-align: center; 
+    font-family: 'Trispace', sans-serif;
     background: rgba(255, 255, 255, 0.1);
     color: white;
 }
@@ -77,4 +84,6 @@
     bottom: 75px;
     
   }
+
+
 
