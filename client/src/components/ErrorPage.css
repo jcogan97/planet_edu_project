@@ -1,0 +1,10 @@
+#text {
+    color: white
+}
+
+.alien {
+    height: 20vh;
+    width: 20vw;
+    background-image: url(../images/alien-4-icon.png);
+    background-size: cover;
+}

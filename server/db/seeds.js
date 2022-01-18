@@ -9,11 +9,13 @@ db.planets.insertMany(
             number_of_moons: 0,
             notable_moons: [],
             position_from_sun: 1,
+            orbital_period: 0.241,
             known_rings: 0,
             first_record: "14th Century BC",
             recorded_by: "Assyrian astronomers",
             average_surface_temperature_c: 127,
-            equatorial_circumference_km: 15329
+            equatorial_circumference_km: 15329,
+            multiple_of_earth_gravity: 0.38
         },
         {
             name: "Venus",
@@ -21,18 +23,21 @@ db.planets.insertMany(
             number_of_moons: 0,
             notable_moons: [],
             position_from_sun: 2,
+            orbital_period: 0.615,
             known_rings: 0,
             first_record: "14th Century BC",
             recorded_by: "Babylonian astronomers",
             average_surface_temperature_c: 462,
-            equatorial_circumference_km: 38025
+            equatorial_circumference_km: 38025,
+            multiple_of_earth_gravity: 0.91
         },
         {
             name: "Earth",
             image: "https://www.transparentpng.com/thumb/earth/QzJqcJ-earth-clipart-png-earth-clipart-png-image-free-download.png",
             number_of_moons: 1,
-            notable_moons: ["The moon"],
+            notable_moons: ["The Moon"],
             position_from_sun: 3,
+            orbital_period: 1,
             known_rings: 0,
             first_record: "",
             recorded_by: "",
@@ -45,11 +50,13 @@ db.planets.insertMany(
             number_of_moons: 2,
             notable_moons: ["Phobos", "Deimos"],
             position_from_sun: 4,
+            orbital_period: 1.881,
             known_rings: 0,
             first_record: "2nd Millenium B",
             recorded_by: "Egyptian astronomers",
             average_surface_temperature_c: -46,
-            equatorial_circumference_km: 21297
+            equatorial_circumference_km: 21297,
+            multiple_of_earth_gravity: 0.38
         },
         {
             name: "Jupiter",
@@ -57,23 +64,27 @@ db.planets.insertMany(
             number_of_moons: 67,
             notable_moons: ["Io", "Europa", "Ganymede", "Callisto"],
             position_from_sun: 5,
+            orbital_period: 11.862,
             known_rings: 4,
             first_record: "7th or 8th Century BC",
             recorded_by: "Babylonian astronomers",
             average_surface_temperature_c: -108,
-            equatorial_circumference_km: 439264
+            equatorial_circumference_km: 439264,
+            multiple_of_earth_gravity: 2.34
         },
         {
             name: "Saturn",
-            image: "https://assets.stickpng.com/thumbs/580b585b2edbce24c47b270c.png",
+            image: "https://www.solarsystemscope.com/spacepedia/images/handbook/renders/saturn.png",
             number_of_moons: 62,
             notable_moons: ["Titan", "Rhea", "Enceladus"],
             position_from_sun: 6,
+            orbital_period: 29.457,
             known_rings: 30,
             first_record: "8th Century BC",
             recorded_by: "Assyrians",
             average_surface_temperature_c: -139,
-            equatorial_circumference_km: 365882
+            equatorial_circumference_km: 365882,
+            multiple_of_earth_gravity: 1.06
         },
         {
             name: "Uranus",
@@ -81,11 +92,13 @@ db.planets.insertMany(
             number_of_moons: 27,
             notable_moons: ["Oberon", "Titania", "Miranda", "Ariel", "Umbriel"],
             position_from_sun: 7,
+            orbital_period: 84.021,
             known_rings: 13,
             first_record: "March 13th 1781",
             recorded_by: "William Herschel",
             average_surface_temperature_c: -197,
-            equatorial_circumference_km: 159354
+            equatorial_circumference_km: 159354,
+            multiple_of_earth_gravity: 0.92
         },
         {
             name: "Neptune",
@@ -93,11 +106,13 @@ db.planets.insertMany(
             number_of_moons: 14,
             notable_moons: ["Triton"],
             position_from_sun: 8,
+            orbital_period: 164.8,
             known_rings: 5,
             first_record: "September 23rd 1846",
             recorded_by: "Urbain Jean Joseph Le Verrier & Johann Galle",
             average_surface_temperature_c: -201,
-            equatorial_circumference_km: 155600
+            equatorial_circumference_km: 155600,
+            multiple_of_earth_gravity: 1.19
         }
     ]
 );

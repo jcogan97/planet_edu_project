@@ -1,0 +1,21 @@
+.planet-ul-list {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Saturn {
+    padding-right: -.5vw;
+    padding-bottom: 4.5px;
+}
+
+.planet-ul-list li {
+    padding-right: 4vw;
+}
+
+.table {
+    margin-top: 37vh;
+}

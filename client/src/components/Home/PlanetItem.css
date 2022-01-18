@@ -1,0 +1,25 @@
+li {
+    list-style: none;
+}
+
+.scalable:hover {
+    cursor: pointer;
+}
+
+.scalable {
+    position: relative;
+    width: 75px;
+    height: auto;
+    z-index: 2;
+    visibility: visible;
+}
+
+#Saturn {
+    width: 150px;
+    height: auto;
+}
+
+.drop-shadow {
+    filter: drop-shadow(0 0 2mm #000) 
+}
+
