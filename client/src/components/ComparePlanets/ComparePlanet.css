@@ -3,6 +3,8 @@
     color: white;
     visibility: visible;
     font-family: 'Trispace', sans-serif;
+    font-size: 16.5px;
+    
     
     
 }
@@ -80,6 +82,7 @@
     position: relative;
     bottom: 50px;
     
+    
   }
   
   #absolute {
@@ -105,6 +108,10 @@
     bottom: 75px;
     
   }
+
+  
+
+ 
 
 
 
