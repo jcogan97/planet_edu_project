@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 
 const DragPlanetList = ({ planets }) => {
   
-
+  const planetArray = planets
   const [planetOrder, setPlanetOrder] = useState([]);
   
 
   useEffect(() => {
-    setPlanetOrder(shuffle(planets));
+    setPlanetOrder(shuffle(planetArray));
   }, [])
 
   
