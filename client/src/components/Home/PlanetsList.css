@@ -113,10 +113,3 @@
     bottom: 44.5vh;
     left: 80vw;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Trispace:wght@100&display=swap');
-
-#header{
-    color: white;
-    font-family: 'Trispace', sans-serif;
-}

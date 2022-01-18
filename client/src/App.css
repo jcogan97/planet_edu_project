@@ -12,6 +12,9 @@ body {
   100% { background-position: -512px 0; }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Trispace:wght@100&display=swap');
+
+
 #sun-wrapper {
   overflow: hidden;
   
