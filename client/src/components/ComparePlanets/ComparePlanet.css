@@ -72,13 +72,13 @@
 
 #relative {
     position: relative;
-    top: 50px;
+    top: 65px;
     
   }
 
   #relative-top {
     position: relative;
-    bottom: 50px;
+    bottom: 65px;
     
   }
   
@@ -96,13 +96,13 @@
 
 #relative-top-weight {
     position: relative;
-    top: 75px;
+    top: 95px;
     
   }
 
   #relative-bottom-weight {
     position: relative;
-    bottom: 75px;
+    bottom: 95px;
     
   }
 
