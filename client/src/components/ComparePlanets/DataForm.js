@@ -22,7 +22,7 @@ const DataForm = ({handleDateInput, handleWeightInput}) => {
             <label>Please enter your age:</label>
             <br/>
             <input type="number" id="age" />
-            <input type="submit" id="submit-button" value="Submit Age"></input>
+            <input type="submit" id="submit-button" value="Submit"></input>
         </form>
         </div>
         
@@ -33,7 +33,7 @@ const DataForm = ({handleDateInput, handleWeightInput}) => {
             <label>Or enter your weight (kg):</label>
             <br/>
             <input type="number" id="weight" />
-            <input type="submit" id="submit-button" value="Submit Weight"></input>
+            <input type="submit" id="submit-button" value="Submit"></input>
         </form>
         </div>
         
