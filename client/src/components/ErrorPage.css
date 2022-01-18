@@ -1,10 +1,21 @@
 #text {
-    color: white
+    color: white;
+    text-align: center;
 }
 
 .alien {
-    height: 20vh;
-    width: 20vw;
+    height: 25vh;
+    width: 25vw;
     background-image: url(../images/alien-4-icon.png);
     background-size: cover;
+    background-position: center;
+    align-self: center;
+    background-size: 25vh;
+    background-repeat: no-repeat;
+}
+
+#error-page{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
 }
