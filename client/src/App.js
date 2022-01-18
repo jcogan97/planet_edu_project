@@ -12,15 +12,26 @@ import DragNDrop from './components/DragNDrop/DragNDrop';
 function App() {
 
   const [planets, setPlanets] = useState([]);
-  
+  const [questions, setQuestions] = useState([]);
+
   useEffect(() => {
     getPlanets();
   }, [planets]);
+
+  useEffect(() => {
+    getQuestions();
+  }, [questions]);
 
   const getPlanets = () => {
     fetch("http://127.0.0.1:5000/api/planets")
       .then(results => results.json())
       .then(data => setPlanets(data));
+  };
+
+  const getQuestions = () => {
+    fetch("http://127.0.0.1:5000/api/questions")
+      .then(results => results.json())
+      .then(data => setQuestions(data));
   };
 
   return (
@@ -38,7 +49,10 @@ function App() {
         render={() => <PlanetsContainer planets={planets} setPlanets={setPlanets} className="planets-container"/>} 
       />
 
-      <Route path="/quiz" component={Quiz} />
+      <Route path="/quiz" 
+      render={() => <Quiz questions={questions} />}
+      />
+
       <Route 
         path="/compare-planets"
         render={() => <ComparePlanets planets={planets} />} 
