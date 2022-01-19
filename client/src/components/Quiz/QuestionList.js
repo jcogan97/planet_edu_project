@@ -4,7 +4,7 @@ import './QuestionList.css'
 
 const QuestionList = ({ questions }) => {
 
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(-1)
   const [results, setResults] = useState({})
   const [incorrectAnswers, setIncorrectAnswers] = useState({})
 
@@ -41,7 +41,7 @@ const QuestionList = ({ questions }) => {
   const handleRetry = (event) => {
     event.preventDefault();
     setResults({})
-    setNumber(0)
+    setNumber(-1)
     setIncorrectAnswers({})
   };
 
@@ -66,7 +66,7 @@ const QuestionList = ({ questions }) => {
     } else {
       return(
         <div className='answers'>
-          <h2>Congratulations!!</h2>
+          <h2 className='trispace'>Congratulations!!</h2>
           <p>You got every question right!</p>
         </div>
       )
@@ -75,7 +75,7 @@ const QuestionList = ({ questions }) => {
 
 
 
-  if(number >= 1){
+  if(number >= 0){
     return (
       <>
       <div id="flex-container">
@@ -91,12 +91,14 @@ const QuestionList = ({ questions }) => {
     )} 
   else {
     return(
+      <>
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
         <div id="submit-btn">
           <input id="submit" type="submit" />
         </div>
       </form>
+      </>
     )
   }
 }
