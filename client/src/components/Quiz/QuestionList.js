@@ -63,13 +63,13 @@ const QuestionList = ({ questions }) => {
           <p>{array}</p>
         </div>
       )
-    } else {
+    } else { if (Object.entries(results).length !== 0){
       return(
         <div className='answers'>
           <h2 className='trispace'>Congratulations!!</h2>
           <p>You got every question right!</p>
         </div>
-      )
+      )}
     }
   }
 
