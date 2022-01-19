@@ -95,7 +95,7 @@ const DragPlanetList = ({ planets }) => {
         ?
         <div className="winner-card">
           <p className="trispace">Congratulations, you have restored order in the solar system!</p>
-          <button onClick={playAgain}>Play again?</button>
+          <button id="submit" onClick={playAgain}>Play again?</button>
         </div>
         :
         null

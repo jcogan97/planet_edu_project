@@ -14,6 +14,17 @@
 
 }
 
+#submit {
+    margin-top: 1.5vh;
+    color: white;
+    background: linear-gradient(45deg, #a94f17 0%, #3f2650 100%);
+    background-repeat: no-repeat;
+    border-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: glowing 20s linear infinite;
+}
+
 #Saturn {
     padding-right: -.5vw;
     padding-bottom: 4.5px;
