@@ -14,10 +14,6 @@
     backdrop-filter: blur(.2rem);
 }
 
-.nav-font {
-    font-family: 'Trispace', sans-serif;
-}
-
 .primary-nav a {
 
     text-decoration: none;

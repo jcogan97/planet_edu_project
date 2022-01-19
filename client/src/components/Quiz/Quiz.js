@@ -8,7 +8,7 @@ const Quiz = ({questions}) => {
 
     return(
         <div id="quiz">
-            <h1 id='header'>Test your planet knowledge!</h1>
+            <h1 id='header' className='trispace'>Test your planet knowledge!</h1>
         <QuestionList questions={questions} />
         </div>
     );

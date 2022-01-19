@@ -89,7 +89,9 @@ const DragPlanetList = ({ planets }) => {
         &&
         planetOrder[7].name === "Neptune"
         ?
-        <p>You are Winner</p>
+        <div className="winner-card">
+          <p className="trispace">Congratulations, you have restored order!</p>
+        </div>
         :
         null
       }
