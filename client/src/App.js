@@ -12,10 +12,15 @@ import DragNDrop from './components/DragNDrop/DragNDrop';
 function App() {
 
   const [planets, setPlanets] = useState([]);
-  
+  const [questions, setQuestions] = useState([]);
+
   useEffect(() => {
     getPlanets();
   }, [planets]);
+
+  useEffect(() => {
+    getQuestions();
+  }, [questions]);
 
   const getPlanets = () => {
     fetch("http://127.0.0.1:5000/api/planets")
@@ -23,11 +28,20 @@ function App() {
       .then(data => setPlanets(data));
   };
 
+  const getQuestions = () => {
+    fetch("http://127.0.0.1:5000/api/questions")
+      .then(results => results.json())
+      .then(data => setQuestions(data));
+  };
+
   return (
     <>
     <Router>
     <>
       <NavBar/>
+      <div id="sun-wrapper">
+        <img id="the-sun" src="https://pluspng.com/img-png/sun-png-bright-sun-2249.png" alt="The Shiny Thing in the Sky"/>
+      </div>
       <Switch>
 
       <Route 
@@ -35,7 +49,10 @@ function App() {
         render={() => <PlanetsContainer planets={planets} setPlanets={setPlanets} className="planets-container"/>} 
       />
 
-      <Route path="/quiz" component={Quiz} />
+      <Route path="/quiz" 
+      render={() => <Quiz questions={questions} />}
+      />
+
       <Route 
         path="/compare-planets"
         render={() => <ComparePlanets planets={planets} />} 
@@ -48,7 +65,6 @@ function App() {
       </Switch>
     </>
     </Router>
-    <img id="the-sun" src="https://pluspng.com/img-png/sun-png-bright-sun-2249.png" alt="The Shiny Thing in the Sky"/>
     </>
   );
 }

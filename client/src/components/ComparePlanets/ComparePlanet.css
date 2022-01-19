@@ -1,10 +1,16 @@
 #display-text {
+    
     color: white;
     visibility: visible;
+    font-family: 'Trispace', sans-serif;
+    font-weight: bold;
+    
+    
 }
 
 #info {
     background: rgba(255, 255, 255, 0.1);
+    font-family: 'Trispace', sans-serif;
     backdrop-filter: blur(.2rem);
     overflow: hidden;
     width: 25vw;
@@ -13,11 +19,27 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
-#info {
+#info-left {
     background: rgba(255, 255, 255, 0.1);
+    font-family: 'Trispace', sans-serif;
+    backdrop-filter: blur(.2rem);
+    overflow: hidden;
+    width: 25vw;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    margin-left: 275px;
+    margin-right: auto;
+    margin-top: 6vh;
+    float: left;
+}
+
+#info-right {
+    background: rgba(255, 255, 255, 0.1);
+    font-family: 'Trispace', sans-serif;
     backdrop-filter: blur(.2rem);
     overflow: hidden;
     width: 25vw;
@@ -25,34 +47,39 @@
     text-align: center;
     color: white;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 5vh;
+    margin-right: 275px;
+    margin-top: 6vh;
+    float: right;
 }
+
+
 
 
 
 
 #submit-button {
     background: rgba(255, 255, 255, 0.1);
+    font-family: 'Trispace', sans-serif;
     backdrop-filter: blur(.2rem);
-    width: 25vw;
+    width: 5vw;
     border-radius: 30px;
     text-align: center;
+    background: linear-gradient(45deg, #a94f17 0%, #3f2650 100%);
     color: white;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
     margin-top: 1vh;
 }
 
 #relative {
     position: relative;
-    top: 50px;
+    top: 65px;
     
   }
 
   #relative-top {
     position: relative;
-    bottom: 50px;
+    bottom: 65px;
     
   }
   
@@ -62,19 +89,23 @@
 
   input { 
     text-align: center; 
+    font-family: 'Trispace', sans-serif;
     background: rgba(255, 255, 255, 0.1);
     color: white;
+    width: 5vw;
 }
 
 #relative-top-weight {
     position: relative;
-    top: 75px;
+    top: 95px;
     
   }
 
   #relative-bottom-weight {
     position: relative;
-    bottom: 75px;
+    bottom: 95px;
     
   }
+
+
 

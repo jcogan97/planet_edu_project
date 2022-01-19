@@ -33,7 +33,7 @@ const ComparePlanets = ({planets}) => {
         <>
         
         
-        <div id="info">
+        <div>
             <DataForm handleDateInput={handleDateInput} handleWeightInput={handleWeightInput} />
         </div>
         

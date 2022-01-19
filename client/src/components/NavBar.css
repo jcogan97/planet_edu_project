@@ -14,10 +14,6 @@
     backdrop-filter: blur(.2rem);
 }
 
-.nav-font {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .primary-nav a {
 
     text-decoration: none;

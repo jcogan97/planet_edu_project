@@ -12,11 +12,20 @@ body {
   100% { background-position: -512px 0; }
 }
 
-#the-sun {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Trispace:wght@100&display=swap');
 
+
+#sun-wrapper {
+  overflow: hidden;
+  
   position: absolute;
   margin: 0;
-  transform: translate(-84%, -40%);
+  transform: translate(-100%, -50%);
   z-index: -5;
+  top: 52%;
+  left: 25%;
+}
 
+.trispace {
+  font-family: 'Trispace', sans-serif;
 }

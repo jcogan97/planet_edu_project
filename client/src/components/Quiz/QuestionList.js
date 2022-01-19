@@ -4,7 +4,7 @@ import './QuestionList.css'
 
 const QuestionList = ({ questions }) => {
 
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(-1)
   const [results, setResults] = useState({})
   const [incorrectAnswers, setIncorrectAnswers] = useState({})
 
@@ -33,10 +33,16 @@ const QuestionList = ({ questions }) => {
         }
       }
     }
-    // console.log(answers);
     setNumber(runningTotal)
     setIncorrectAnswers(answers)
-    // console.log(incorrectAnswers);
+  };
+
+  
+  const handleRetry = (event) => {
+    event.preventDefault();
+    setResults({})
+    setNumber(-1)
+    setIncorrectAnswers({})
   };
 
   const incorrectNodes = () => {
@@ -52,8 +58,16 @@ const QuestionList = ({ questions }) => {
     if(array.length !== 0){
       return(
         <div className='answers'>
-        <h2>What you got wrong</h2>
-        <p>{array}</p>
+          <h2 className='trispace'>You got {number} right!</h2>
+          <h3>Corrections...</h3>
+          <p>{array}</p>
+        </div>
+      )
+    } else {
+      return(
+        <div className='answers'>
+          <h2 className='trispace'>Congratulations!!</h2>
+          <p>You got every question right!</p>
         </div>
       )
     }
@@ -61,14 +75,15 @@ const QuestionList = ({ questions }) => {
 
 
 
-  if(number >= 1){
+  if(number >= 0){
     return (
       <>
       <div id="flex-container">
-      <form id="form" onSubmit={handleSubmit}>
+      <form id="form">
         {listOfQuestions}
-        <input id="submit" type="submit" />
-        <p id="text-is-evil">You got {number} right!</p>
+        <div id="submit-btn">
+          <input id="submit" type="button" value="Retry" onClick={handleRetry}/>
+        </div>
       </form>
           {incorrectArray(incorrectNodes())}
       </div>
@@ -76,10 +91,14 @@ const QuestionList = ({ questions }) => {
     )} 
   else {
     return(
+      <>
       <form id="form" onSubmit={handleSubmit}>
         {listOfQuestions}
-        <input id="submit" type="submit" />
+        <div id="submit-btn">
+          <input id="submit" type="submit" />
+        </div>
       </form>
+      </>
     )
   }
 }

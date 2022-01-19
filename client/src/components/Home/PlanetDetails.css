@@ -1,5 +1,6 @@
 .card {
   background: rgb(255, 255, 255);
+  font-family: 'Trispace', sans-serif;
   display: inline-block;
   width: 18vw;
   height: 42vh;
@@ -15,6 +16,7 @@
 
 #card-banner {
     color: white;
+    font-family: 'Trispace', sans-serif;
     background: linear-gradient(90deg, #FC5C7D 0%, #6A82FB 100%);
     overflow: hidden;
 }

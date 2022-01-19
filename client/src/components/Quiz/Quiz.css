@@ -1,5 +1,5 @@
 #text-is-evil {
-    color: white
+    color: white;
 }
 
 #form {
@@ -11,7 +11,6 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    
     padding: 0.2vh;
 }
 
@@ -22,10 +21,17 @@
 #submit {
     margin-top: 1.5vh;
     color: white;
-    background: rgba(163, 142, 142, 0.6);
+    background: linear-gradient(45deg, #a94f17 0%, #3f2650 100%);
+    background-repeat: no-repeat;
     border-color: rgba(255, 255, 255, 0.1);;
     border-radius: 10px;
     cursor: pointer;
+    animation: glowing 20s linear infinite;
+}
+
+#submit-btn {
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 #flex-container{
