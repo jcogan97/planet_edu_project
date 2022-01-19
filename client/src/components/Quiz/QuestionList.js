@@ -58,7 +58,7 @@ const QuestionList = ({ questions }) => {
     if(array.length !== 0){
       return(
         <div className='answers'>
-          <h2 id="text-is-evil">You got {number} right!</h2>
+          <h2 className='trispace'>You got {number} right!</h2>
           <h3>Corrections...</h3>
           <p>{array}</p>
         </div>
