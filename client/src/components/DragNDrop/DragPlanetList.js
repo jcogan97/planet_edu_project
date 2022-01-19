@@ -28,6 +28,10 @@ const DragPlanetList = ({ planets }) => {
     return newArray;
   }
 
+  const playAgain = () => {
+    shuffle(planetOrder)
+  }
+
   const handleOnDragEnd = (result) => {
     if (!result.destination) return;
 
@@ -91,6 +95,7 @@ const DragPlanetList = ({ planets }) => {
         ?
         <div className="winner-card">
           <p className="trispace">Congratulations, you have restored order in the solar system!</p>
+          <button onClick={playAgain}>Play again?</button>
         </div>
         :
         null
