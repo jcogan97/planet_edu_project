@@ -63,7 +63,13 @@ const QuestionList = ({ questions }) => {
           <p>{array}</p>
         </div>
       )
-    } else { if (Object.entries(results).length !== 0){
+    } else { if(Object.entries(results).length !== 8){
+        return (
+          <div className='answers'>
+        <p className='trispace'>Please complete all questions</p>
+          </div>
+        )
+        } else if (Object.entries(results).length !== 0){
         return(
           <div className='answers'>
             <h2 className='trispace'>Congratulations!!</h2>
