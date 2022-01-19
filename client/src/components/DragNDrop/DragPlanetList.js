@@ -94,7 +94,7 @@ const DragPlanetList = ({ planets }) => {
         planetOrder[7].name === "Neptune"
         ?
         <div className="winner-card">
-          <p className="trispace">Congratulations, you have restored order!</p>
+          <p className="trispace">Congratulations, you have restored order in the solar system!</p>
           <button onClick={playAgain}>Play again?</button>
         </div>
         :
